@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Fragment_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_home"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:weightSum="5"
+            android:layout_weight="1">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingBottom="10dp"
+                android:layout_weight="0.9">
+
+                <ImageButton
+                    android:id="@+id/btn_back_product"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/back_edit_txt"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/back"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/btn_cart"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="28dp"
+                    android:layout_toEndOf="@+id/btn_back_product"
+                    android:background="@drawable/back_edit_txt"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/buy"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/view_Pager"
+                android:src="@drawable/bong_cai"
+                android:scaleType="fitCenter"
+                android:layout_weight="3"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/panel_color"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <me.relex.circleindicator.CircleIndicator
+                    android:layout_width="match_parent"
+                    android:id="@+id/Circle_Indicator"
+                    android:layout_height="30dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Bông cải xanh "
+                        android:id="@+id/detail_ten"
+                        android:textStyle="bold"
+                        android:textColor="#FF8A80"
+                        android:textSize="30dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:gravity="center"
+            android:weightSum="5"
+            android:orientation="vertical"
+            android:background="@drawable/back_tt_detail"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/detail_gia"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:text="Bông cải xanh (hoặc súp lơ xanh, cải bông xanh, Broccoli) là một loại cây thuộc loài Cải bắp dại, có hoa lớn ở đầu, thường được dùng như rau. "
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textSize="22sp"
+                        android:text="So luong"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:id="@+id/detail_sl_tru"
+                            android:layout_height="30dp"
+                            android:background="@drawable/back_cam"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/dau_tru" />
+                        <EditText
+                            android:layout_width="70dp"
+                            android:text="5"
+                            android:id="@+id/detail_sl"
+                            android:textAlignment="center"
+                            android:textSize="20sp"
+                            android:inputType="numberDecimal"
+                            android:layout_height="40dp"/>
+
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/dau_cong"
+                            android:id="@+id/detail_sl_cong"
+                            android:scaleType="fitCenter"
+                            android:background="@drawable/back_cam"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginStart="35dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="160dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/detail_btnThemSP"
+                        android:background="@drawable/back_cam"
+                        android:text="Thêm vào giỏ hàng"
+                        android:textAllCaps="false"
+                         />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.7"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Có thể bạn thích:  "
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/cam"
+                    />
+
+                <ListView
+                    android:id="@+id/list_SP_LienQuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

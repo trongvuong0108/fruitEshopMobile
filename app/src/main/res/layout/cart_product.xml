@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_sanpham"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:elevation="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/Cart_Product_IMG"
+            android:layout_width="30dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/cua" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/Cart_Product_Name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="hello"
+                    android:textColor="#0E0C0C"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/Cart_Product_remove"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_remove"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/delete_remove"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/Cart_Product_btnTru"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/back_cam"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/dau_tru" />
+
+                        <EditText
+                            android:id="@+id/Cart_Product_SL"
+                            android:layout_width="70dp"
+                            android:layout_height="40dp"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/Cart_Product_btnCong"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/back_cam"
+
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/dau_cong" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_gia"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold">
+
+                    <TextView
+                        android:id="@+id/Cart_Product_price"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="400"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

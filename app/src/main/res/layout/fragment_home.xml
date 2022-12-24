@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.HomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txt_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="0.3"
+                    android:hint="Nhập thông tin sản phẩm" />
+
+                <ImageButton
+                    android:id="@+id/button_find"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.06"
+                    android:background="@drawable/back_trongsuot"
+                    android:padding="7dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/search" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/product_btn_cart"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:src="@drawable/buy"
+                android:background="@drawable/back_sanpham"
+                android:scaleType="fitCenter"
+                android:padding="7dp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/viewPager_home"
+        android:src="@drawable/bong_cai"
+        android:scaleType="fitCenter"
+        />
+    <me.relex.circleindicator.CircleIndicator
+        android:layout_width="match_parent"
+        android:id="@+id/CircleIndicator_home"
+        android:layout_height="30dp"/>
+
+</LinearLayout>
